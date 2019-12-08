@@ -68,11 +68,11 @@ print("N:", N)
 d = privatekey(e, RP)
 print("d:", d)
 
-signedTxt = sign('yeet', d, N)
+signedTxt = sign('test', d, N)
 print('signed:', signedTxt)
 
 
-verified = verify(signedTxt, 'yeet', e, N)
+verified = verify(signedTxt, 'test', e, N)
 print('The sender is verified(True/False):', verified)
 
 """
